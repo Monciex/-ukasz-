@@ -1,0 +1,18 @@
+public class Main {
+
+    public static void main(String[] args) {
+        int a, b, c, d = 0;
+        for (a = 100; a <= 999; a++)
+            for (b = 100; b <= 999; b++) {
+                c = a * b;
+                String x = Integer.toString(c);
+                String x1 = new StringBuilder(x).reverse().toString();
+                if (x.equals(x1)) {
+                    if (d <= c)
+                        d = c;
+                }
+            }
+                System.out.println(d);
+
+    }
+}
