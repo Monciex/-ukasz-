@@ -94,6 +94,7 @@ public class Complex {
         double z = LiczbyZespolone.DzielenieLiczbZespolonychRnMianownik();
         double Licz = x/y;
         double licz = y/z;
+        // Ostatnie dzielenie 
         System.out.println("Re wynosi " + LiczbyZespolone.DodawanieLiczbZespolonychRe()+ " + " + LiczbyZespolone.DodawanieLiczbZespolonychIn()+"i");
         System.out.println("Re wynosi " + LiczbyZespolone.OdejmowanieLiczbZespolonychRe()+ " + " + LiczbyZespolone.OdejmowanieLiczbZespolonychIn()+"i");
         System.out.println("Re wynosi " + LiczbyZespolone.MnozenieLiczbZespolonychRe() + " + " + LiczbyZespolone.MnozenieLiczbZespolonychIn() +"i");
