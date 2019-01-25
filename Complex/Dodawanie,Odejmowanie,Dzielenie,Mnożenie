@@ -1,0 +1,102 @@
+public class Complex {
+    double Re, In, rE, iN;
+
+    public double DodawanieLiczbZespolonychRe() {
+        double DodawanieRe;
+        DodawanieRe = Re + rE;
+        return DodawanieRe;
+    }
+    public double DodawanieLiczbZespolonychIn() {
+        double DodawanieIn;
+        DodawanieIn = In + iN;
+        return DodawanieIn;
+    }
+    public double OdejmowanieLiczbZespolonychRe() {
+        double OdejmowanieRe;
+        OdejmowanieRe = Re - rE;
+        return OdejmowanieRe;
+    }
+    public double OdejmowanieLiczbZespolonychIn() {
+        double OdejmowanieIn;
+        OdejmowanieIn = In - iN;
+        return OdejmowanieIn;
+    }
+    public double MnozenieLiczbZespolonychRe() {
+        double MnozenieRn;
+        double MnozenieRni;
+        double mnozenieRn;
+        double mnozenieRni;
+        MnozenieRn = Re * rE;
+        MnozenieRni = In * iN;
+        mnozenieRni = MnozenieRni*-1;
+        mnozenieRn= MnozenieRn + mnozenieRni;
+        return mnozenieRn;
+    }
+    public double MnozenieLiczbZespolonychIn() {
+        double MnozenieIn;
+        double MnozenieIn1;
+        double mnozenieIn;
+        MnozenieIn= Re*iN;
+        MnozenieIn1=In*rE;
+        mnozenieIn = MnozenieIn+MnozenieIn1;
+        return mnozenieIn;
+
+    }
+    public double DzielenieLiczbZespolonychRnLicznik() {
+        double MnozenieRn;
+        double MnozenieRni;
+        double mnozenieRn;
+        double DzielenieZmianaZnaku;
+        double mnozenieRni;
+        DzielenieZmianaZnaku = iN+-1;
+        MnozenieRn = Re * rE;
+        MnozenieRni = In * iN;
+        mnozenieRni = MnozenieRni*-1;
+        mnozenieRn= MnozenieRn + mnozenieRni;
+        return mnozenieRn;
+    }
+    public double DzielenieLiczbZespolonychInLicznik() {
+        double MnozenieIn;
+        double MnozenieIn1;
+        double mnozenieIn;
+        MnozenieIn = Re * iN;
+        MnozenieIn1 = In * rE;
+        mnozenieIn = MnozenieIn + MnozenieIn1;
+        return mnozenieIn;
+
+    }
+    public double DzielenieLiczbZespolonychRnMianownik() {
+        double Dzielenie1;
+        double Dzielenie2;
+        double Dzielenie3;
+        double Dzielenie4;
+        Dzielenie1= iN*-1;
+        Dzielenie2= rE*rE;
+        Dzielenie3= iN*iN;
+        Dzielenie4= rE+iN;
+        return Dzielenie4;
+    }
+
+
+
+
+
+
+    public static void main(String[] args) {
+        Complex LiczbyZespolone = new Complex();
+        LiczbyZespolone.Re = 3;
+        LiczbyZespolone.In = 5;
+        LiczbyZespolone.rE = 7;
+        LiczbyZespolone.iN = 11;
+        // Ostatnie dzielenie
+        double x = LiczbyZespolone.DzielenieLiczbZespolonychRnLicznik();
+        double y = LiczbyZespolone.DzielenieLiczbZespolonychInLicznik();
+        double z = LiczbyZespolone.DzielenieLiczbZespolonychRnMianownik();
+        double Licz = x/y;
+        double licz = y/z;
+        System.out.println("Re wynosi " + LiczbyZespolone.DodawanieLiczbZespolonychRe()+ " + " + LiczbyZespolone.DodawanieLiczbZespolonychIn()+"i");
+        System.out.println("Re wynosi " + LiczbyZespolone.OdejmowanieLiczbZespolonychRe()+ " + " + LiczbyZespolone.OdejmowanieLiczbZespolonychIn()+"i");
+        System.out.println("Re wynosi " + LiczbyZespolone.MnozenieLiczbZespolonychRe() + " + " + LiczbyZespolone.MnozenieLiczbZespolonychIn() +"i");
+        System.out.println("Re wynosi " + Licz+ " + " +licz+" i");
+    }
+}
