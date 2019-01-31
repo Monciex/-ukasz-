@@ -1,11 +1,10 @@
-public class Iloczyn {
+public class Main {
 
-    static int iloczynSkalarny(int wektor1[], int wektor2[]) {
-        int wynik = 0;
-        for (int i = 0; i < 2; i++) {
-            wynik += wektor1[i] * wektor2[i];
+    public static void main(String[] args) {
+        int[] wektor1 = {2, -1};
+        int[] wektor2 = {3, 4};
+        System.out.println(Iloczyn.iloczynSkalarny(wektor1,wektor2));
 
-        }
-        return wynik;
+
     }
 }
