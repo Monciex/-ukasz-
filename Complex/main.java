@@ -7,6 +7,10 @@ public class Main {
         //Czesc urojona
         double IN = 8;
         double in =3;
+        //sprzężenie
+        double a,b,c;
+        a = IN*-1;
+        b = in*-1;
 
         System.out.println(+Complex.DodawanieRe(RE,re)+"  " + Complex.DodawanieIn(IN,in)+"i"); //Dodawanie
         System.out.println(+Complex.OdejmowanieRe(RE,re)+"  " + Complex.OdejmowanieIn(IN,in)+"i"); //Odejmowanie
