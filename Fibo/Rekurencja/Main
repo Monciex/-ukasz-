@@ -1,0 +1,9 @@
+public class Main {
+
+    public static void main(String[] args) {
+        FiboRekurencja r = new FiboRekurencja();
+        long x = 0;
+        x=r.FiboRek(6);
+        System.out.println(x);
+    }
+}
