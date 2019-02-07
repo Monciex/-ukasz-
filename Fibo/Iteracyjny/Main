@@ -1,0 +1,9 @@
+public class Main {
+
+    public static void main(String[] args) {
+        FiboIteracyjny r = new FiboIteracyjny();
+        long x = 0;
+        x=r.FiboIte(5);
+        System.out.println(x);
+    }
+}
